@@ -51,3 +51,19 @@ fun fizzBuzz3(i: Int): String {
     }
     return result
 }
+
+
+//if 式の結果を直接 return を渡したパターン
+fun fizzBuzz4(i: Int): String {
+    return if (i % 15 == 0) {
+        "FizzBuzz"
+    } else if (i % 3 == 0) {
+        "Fizz"
+    } else if (i % 5 == 0) {
+        "Buzz"
+    } else {
+        "$i"
+    }
+}
+
+
