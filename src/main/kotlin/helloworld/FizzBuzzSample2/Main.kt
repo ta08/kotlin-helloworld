@@ -6,7 +6,12 @@ fun main() {
         println(fizzBuzz(i))
     }
 
-    IntRange(1, n).map(::fizzBuzz).forEach(::println)
+    IntRange(1, n).map(::fizzBuzz2).forEach(::println)
+
+
+//    Scala syntax....
+//    val printFizzBuzz = ::fizzBuzz3 andThen ::println
+//    IntRange(1,n).forEach {printFizzBuzz}
 
 }
 
