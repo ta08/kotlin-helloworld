@@ -25,3 +25,20 @@ fun fizzBuzz(i: Int): String {
     }
     return result
 }
+
+fun fizzBuzz2(i: Int): String {
+    return when {
+        i % 15 == 0 -> {
+            "FizzBuzz"
+        }
+        i % 3 == 0 -> {
+            "Fizz"
+        }
+        i % 5 == 0 -> {
+            "Buzz"
+        }
+        else -> {
+            "$i"
+        }
+    }
+}
