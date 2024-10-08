@@ -3,8 +3,11 @@ package org.example.helloworld.FizzBuzzSample2
 fun main() {
     val n = 20
     for (i in 1..n) {
-        println(fizzBuzz3(i))
+        println(fizzBuzz(i))
     }
+
+    IntRange(1, n).map(::fizzBuzz).forEach(::println)
+
 }
 
 fun fizzBuzz(i: Int): String {
@@ -57,3 +60,4 @@ fun fizzBuzz3(i: Int): String {
         else -> "$i"
     }
 }
+
