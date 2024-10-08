@@ -1,4 +1,4 @@
-package org.example.helloworld
+package org.example.helloworld.FizzBuzzSample1
 
 fun main() {
     val n = 20
